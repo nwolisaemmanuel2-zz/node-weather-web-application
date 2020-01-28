@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading....'
     messageTwo.textContent = ''
 
-    // fetching out weather data
+    // fetch out weather data
     
     fetch('/weather?address=' + Location).then((response) => {
     response.json().then((data) => {
